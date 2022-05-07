@@ -88,4 +88,4 @@ Add a Festival |`near call $CONTRACT addFest '{"festName":"'"Food Festival"'","g
 Find Festival By Id |`near view $CONTRACT findFestById '{"id":'"234243234"'}' --accountId $OWNER`|
 Find Festival By Name |`near view $CONTRACT findFestByName '{"festName":"'"Food Festival"'"}'`|
 Get All Festivals|`near view $CONTRACT findFests '{"offset": 0}'`|
-Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId $OWNER --amount $donation`|
+Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId $OWNER --amount 100000000000000000000000000`|
