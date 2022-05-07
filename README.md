@@ -89,3 +89,6 @@ Find Festival By Id |`near view $CONTRACT findFestById '{"id":'"234243234"'}' --
 Find Festival By Name |`near view $CONTRACT findFestByName '{"festName":"'"Food Festival"'"}'`|
 Get All Festivals|`near view $CONTRACT findFests '{"offset": 0}'`|
 Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId your-account.testnet --amount 100000000000000000000000000`|
+
+
+https://app.patika.dev/berkantkaplan
