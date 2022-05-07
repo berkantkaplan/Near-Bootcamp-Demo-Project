@@ -84,8 +84,8 @@ export OWNER=your-account.testnet
 # Function Usage
 |What Does It Do?|Example Call|
 |---|---|
-Add a Festival |`near call $CONTRACT addFest '{"festName":"'"Food Festival"'","genre":"'"Nutrition"'","country":"'"Africa"'","date":"'"17062022"'","requestDonation":"'"10000000000000000000000000000"'"}' --accountId $OWNER`|
-Find Festival By Id |`near view $CONTRACT findFestById '{"id":'"234243234"'}' --accountId $OWNER`|
+Add a Festival |`near call $CONTRACT addFest '{"festName":"'"Food Festival"'","genre":"'"Nutrition"'","country":"'"Africa"'","date":"'"17062022"'","requestDonation":"'"10000000000000000000000000000"'"}' --accountId your-account.testnet`|
+Find Festival By Id |`near view $CONTRACT findFestById '{"id":'"234243234"'}' --accountId your-account.testnet`|
 Find Festival By Name |`near view $CONTRACT findFestByName '{"festName":"'"Food Festival"'"}'`|
 Get All Festivals|`near view $CONTRACT findFests '{"offset": 0}'`|
-Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId $OWNER --amount 100000000000000000000000000`|
+Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId your-account.testnet --amount 100000000000000000000000000`|
