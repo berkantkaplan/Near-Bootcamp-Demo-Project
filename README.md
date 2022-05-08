@@ -2,11 +2,11 @@
 
 -This is a smart contract under which any community can request donations for organizing events, and others can donate.
 
-## Build and Deploy the contract
+## Cloning, Build and Deploy the contract
 
 ```ts
 
-After cloning ----> yarn
+After cloning ----> Run ----> yarn
 
 
 -----------------
@@ -84,11 +84,11 @@ export OWNER=your-account.testnet
 # Function Usage
 |What Does It Do?|Example Call|
 |---|---|
-Add a Festival |`near call $CONTRACT addFest '{"festName":"'"Food Festival"'","genre":"'"Nutrition"'","country":"'"Africa"'","date":"'"17062022"'","requestDonation":"'"10000000000000000000000000000"'"}' --accountId your-account.testnet`|
-Find Festival By Id |`near view $CONTRACT findFestById '{"id":'"234243234"'}' --accountId your-account.testnet`|
-Find Festival By Name |`near view $CONTRACT findFestByName '{"festName":"'"Food Festival"'"}'`|
+Add a Festival |`near call $CONTRACT addFest '{"festName":"Food Festival","genre":"Nutrition","country":"Africa","date":"17062022","requestDonation":"10000000000000000000000000000"}' --accountId your-account.testnet`|
+Find Festival By Id |`near view $CONTRACT findFestById '{"id":$id}' --accountId your-account.testnet`|
+Find Festival By Name |`near view $CONTRACT findFestByName '{"festName":"Food Festival"}'`|
 Get All Festivals|`near view $CONTRACT findFests '{"offset": 0}'`|
-Donate Fesival|`near call $CONTRACT donateFest '{"id":'"234243234"', "donation" : '"$100000000000000000000000000"'}'  --accountId your-account.testnet --amount 100000000000000000000000000`|
+Donate Festival|`near call $CONTRACT donateFest '{"id":$id, "donation" : 1}'  --accountId your-account.testnet --amount 1`|
 
 
 https://app.patika.dev/berkantkaplan
