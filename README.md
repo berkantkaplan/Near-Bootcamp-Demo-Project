@@ -6,7 +6,8 @@
 
 ```ts
 
-After cloning ----> Run ----> yarn
+After cloning 
+Run --> yarn
 
 
 -----------------
@@ -67,7 +68,7 @@ export OWNER=your-account.testnet
 ## findFestByName
 ```ts
 - Takes ***festName*** as parameter.
-- Shows the name of the festival whose id you know.
+- Shows the festival whose name you know.
 ```
 ## findFests
 ```ts
@@ -78,7 +79,7 @@ export OWNER=your-account.testnet
 ```ts
 - Takes ***id*** and ***donation*** as parameters.
 - The maximum donation amount is 50 NEAR.
-- It does not make more donations than the remaining requested donation amount.
+- It does not make more donations than the requested donation amount.
 - It does not donate more than the remaining requested donation amount.
 ```
 # Function Usage
